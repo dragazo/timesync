@@ -19,10 +19,10 @@ if __name__ == '__main__':
         print('error', error, flush = True)
 
     def on_close(ws, close_status_code, close_msg):
-        print('close', close_status_code, close_msg)
+        print('close', close_status_code, close_msg, flush = True)
 
     def on_open(ws):
-        print('open')
+        print('open', flush = True)
         send_request(ws)
 
     websocket.enableTrace(False)

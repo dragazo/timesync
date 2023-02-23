@@ -13,7 +13,7 @@ macro_rules! debug_println {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let server_addr = "127.0.0.1:8070";
+    let server_addr = "127.0.0.1:46125";
     let listener = TcpListener::bind(server_addr).await?;
     debug_println!("listening at {server_addr}");
 
