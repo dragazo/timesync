@@ -1,5 +1,5 @@
 [package]
-name = "netsblox-time-sync"
+name = "timesync"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,3 +9,4 @@ edition = "2021"
 futures = "0.3.26"
 tokio = { version = "1.25.0", features = ["full"] }
 tokio-tungstenite = "0.18.0"
+clap = { version = "4.5.17", features = ["derive"] }
